@@ -3,13 +3,19 @@ import { Link } from "react-router-dom";
 
 const Meny = () => {
   return (
-    <div>
-      <nav>
+    <div className="header">
+
+      <div className='loggo'>
+        <p>Hår Av Alice</p>
+      </div>
+
+      <div className="menyLinks">
           <Link to="/">Hem</Link>
           <Link to="/ImagePage">Håruppsättningar</Link>
           <Link to="/AboutMePage">Om Mig</Link>
-          <Link to="/BookingPage">Boka Mig</Link>
-      </nav>
+          <button className="bookMeBtn"><Link className="link" to="/BookingPage">Boka Mig</Link></button>
+      </div>
+
     </div>
   )
 }

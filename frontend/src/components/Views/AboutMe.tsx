@@ -1,7 +1,8 @@
+import image from '../../Assets/2.png'
 
 const AboutMe = () => {
   return (
-    <div className="AbouteMePage">
+    <div className="AboutMePage">
 
     <div className="OmMig-Header">
       <h3>Om mig</h3>
@@ -18,8 +19,8 @@ const AboutMe = () => {
       <br /> <br />
       Idag är kontot inte längre aktivt, men skapandet finns kvar. Jag gör fortfarande frisyrer när tillfälle ges – till bröllop, bal och andra stunder.</p>
       </div>
-      <div className="OmMig-Img">
-      <img src="/img/img_jag.png" />
+      <div className="AboutMe-Img">
+      <img src={image} alt='bild' />
     </div>
 
     </div>
@@ -28,8 +29,8 @@ const AboutMe = () => {
 
     <div className="KontaktaMig-Page">
 
-    <div className="OmMig-Img2">
-      <img src="/img/img_jag.png" />
+    <div className="AboutMe-Img2">
+      <img src={image} alt='bild' />
     </div>
 
     <div className="KontaktaMig-Text">
@@ -45,8 +46,6 @@ const AboutMe = () => {
     </div>
 
     </div>
-
-    <div className="AboutMe-BetweenSpace"></div>
 
     </div>
   )

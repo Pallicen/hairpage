@@ -1,4 +1,19 @@
-
+import image1 from '../../Assets/1.png'
+import image2 from '../../Assets/2.png'
+import image3 from '../../Assets/3.png'
+import image4 from '../../Assets/4.png'
+import image5 from '../../Assets/5.png'
+import image6 from '../../Assets/6.png'
+import image7 from '../../Assets/7.png'
+import image9 from '../../Assets/9.png'
+import image10 from '../../Assets/10.png'
+import image11 from '../../Assets/11.png'
+import image12 from '../../Assets/12.png'
+import image13 from '../../Assets/13.png'
+import image14 from '../../Assets/14.png'
+import image15 from '../../Assets/15.png'
+import image16 from '../../Assets/16.png'
+import image17 from '../../Assets/17.png'
 
 const Image = () => {
   return (
@@ -8,21 +23,22 @@ const Image = () => {
 
           <div className="image-container">
 
-          <img className="imgs" src="/img/img_1.png"/>
-          <img className="imgs" src="/img/img_2.png"/>
-          <img className="imgs" src="/img/img_3.png"/>
-          <img className="imgs" src="/img/img_4.png"/>
-          <img className="imgs" src="/img/img_5.png"/>
-          <img className="imgs" src="/img/img_7.png"/>
-          <img className="imgs" src="/img/img_8.png"/>
-          <img className="imgs" src="/img/img_10.png"/>
-          <img className="imgs" src="/img/img_11.png"/>
-          <img className="imgs" src="/img/img_12.png"/>
-          <img className="imgs" src="/img/img_14.png"/>
-          <img className="imgs" src="/img/img_15.png"/>
-          <img className="imgs" src="/img/img_17.png"/>
-          <img className="imgs" src="/img/img_18.png"/>
-          <img className="imgs" src="/img/img_19.png"/>
+          <img className="imgs" src={image1} alt='bild'/>
+          <img className="imgs" src={image2} alt='bild'/>
+          <img className="imgs" src={image3} alt='bild'/>
+          <img className="imgs" src={image4} alt='bild'/>
+          <img className="imgs" src={image5} alt='bild'/>
+          <img className="imgs" src={image6} alt='bild'/>
+          <img className="imgs" src={image7} alt='bild'/>
+          <img className="imgs" src={image9} alt='bild'/>
+          <img className="imgs" src={image10} alt='bild'/>
+          <img className="imgs" src={image11} alt='bild'/>
+          <img className="imgs" src={image12} alt='bild'/>
+          <img className="imgs" src={image13} alt='bild'/>
+          <img className="imgs" src={image14} alt='bild'/>
+          <img className="imgs" src={image15} alt='bild'/>
+          <img className="imgs" src={image16} alt='bild'/>
+          <img className="imgs" src={image17} alt='bild'/>
 
           </div>
 

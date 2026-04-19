@@ -15,7 +15,10 @@ function App() {
 
   return (
     <div>
-      <Meny />
+
+      <div className='meny'>
+        <Meny />
+      </div>
 
       <Routes>
         <Route path='/' element={<Home />} />
@@ -23,6 +26,11 @@ function App() {
         <Route path='/AboutMePage' element={<AboutMe />} />
         <Route path='/BookingPage' element={<Booking />} />
       </Routes>
+
+      <footer>
+        <div>
+        </div>
+      </footer>
     </div>
   )
 }

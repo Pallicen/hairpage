@@ -1,3 +1,8 @@
+
+.imagePage {
+  min-height: 100vh;
+}
+
 .spaceOverImg {
   min-height: 2rem;
 }

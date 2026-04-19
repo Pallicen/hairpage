@@ -18,27 +18,13 @@
   }
 
 
-.header {
+.header-mini {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 6rem;
+  height: 5rem;
   width: 100%;
-}
-
-.HårAvAlice {
-  font-size: 2rem;
-  width: 50%;
-}
-
-.meny {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 2rem;
-  font-size: 1.3rem;
-  height: 6rem;
-  width: 50%;
+  font-weight: 600;
 }
 
 
@@ -71,7 +57,7 @@ a {
 }
 
 .AboutMe-StartPage-Text {
-  min-width: 45%;
+  max-width: 48%;
   p {
     font-size: 1.4rem;
   }
@@ -88,7 +74,7 @@ a {
 }
 
 .AboutMe-StartPage-Bild {
-  min-width: 45%;
+  max-width: 48%;
 
   img {
     border-radius: 1.25rem;
@@ -120,7 +106,7 @@ a {
 }
 
 .Service-Card {
-  position: relative; /* 👈 superviktig */
+  position: relative;
   width: 100%;
 }
 
@@ -134,17 +120,42 @@ a {
 
 .Service-Box {
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   bottom: 20px;
   left: 20px;
-
-  background-color: pink;
+  background-color:  rgb(236, 214, 218);
   padding: 1.5rem;
   max-width: 70%;
+  min-width: 70%;
+  min-height: 45%;
   border-radius: 10px;
-
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-
   z-index: 2;
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+
+  button {
+    width: 12rem;
+    height: 2.2rem;
+    border-radius: 16px;
+    background-color: rgb(60, 10, 10);
+    border: none;
+
+  }
+
+  .text-bold {
+    font-weight: 600;
+  }
+
+  .link {
+    color: white;
+    font-size: 1rem;
+  }
 }
 
 .Service-Card::after {
@@ -211,45 +222,48 @@ a {
 .Questions-List {
   min-height: 80vh;
   min-width: 50%;
-  .faq {
-    border-radius: 10px;
-    padding: 15px;
-    background-color: rgb(236, 214, 218);
-    overflow: hidden;
-    transition: 0.6s ease;
-  }
-  .faq.open {
-  background-color: rgb(236, 214, 218);
-  transition: 0.6s ease;
-  }
-  .que {
-    cursor: pointer;
-    font-weight: 600;
-  }
-  .ans {
-    max-height: 0;
-    margin-top: 0.5rem; 
-    opacity: 0;
-    transform: translateY(-5px);
-    max-height: 0;
-    overflow: hidden;
-    padding: 0 15px;
-    transition: max-height 0.6s ease, padding 0.6s ease;
-  }
 }
+
+.faq {
+  border-radius: 10px;
+  padding: 15px;
+  background-color: rgb(236, 214, 218);
+  overflow: hidden;
+  transition: 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.que {
+  cursor: pointer;
+  font-weight: 600;
+}
+.ans {
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-5px);
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+details[open] .ans {
+  max-height: 500px;
+  opacity: 1;
+  transform: translateY(0);
+  margin-top: 10px;
+}
+
 
 summary {
   list-style: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  cursor: pointer;
 }
 
 summary::after {
   content: "▾";
   font-size: 1.2rem;
-  transition: transform 0.2s ease;
+  transition: transform 0.3s ease;
 }
 
 
@@ -257,64 +271,10 @@ details[open] summary::after {
   transform: rotate(180deg);
 }
 
-details[open] .ans {
-  opacity: 1;
-  transform: translateY(0);
-}
 
-.faq.open .ans {
-  max-height: 500px;
-  padding: 15px;
-}
 
 
 
 /* mobilversion start */
 
-@media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0.75rem;
-  }
 
-  .Home-Page-Img { 
-    min-height: auto;
-    height: 260px;
-    overflow: hidden;
-    margin-bottom: 4rem;
-  }
-
-  .Home-Page-Img img {
-    width: 100%;
-    height: 100%;
-  }
-
-  .Service-StartPage-Uppsättningar-Input,
-  .Service-StartPage-Klippningar-Input {
-    width: 90%;
-    max-width: 90%;
-    min-height: auto;
-    box-sizing: border-box;
-    margin: 0 0 1rem 0;
-  }
-
-  .Service,
-  .HomeToCostumer-Page,
-  .Questions-Header,
-  .Questions-List {
-    height: auto;
-    min-height: 0;
-  }
-
-  .AboutMe-StartPage,
-  .Service,
-  .HomeToCostumer-Page,
-  .Questions-Page {
-    margin-top: 4rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .Home-Page-Img img { object-position: 65% 35% !important; }
-}
