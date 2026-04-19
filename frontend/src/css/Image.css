@@ -1,0 +1,23 @@
+.spaceOverImg {
+  min-height: 2rem;
+}
+
+.image-container {
+  min-height: 180vh;
+  margin-bottom: 2rem;
+  column-count: 4;
+  column-gap: 1.2rem;
+}
+
+.imgs {
+  width: 100%;
+  margin-bottom: 1rem;
+  display: block;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .image-container {
+    column-count: 2;
+  }
+}

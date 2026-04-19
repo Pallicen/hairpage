@@ -1,0 +1,320 @@
+
+  .HomePage-startDiv {
+    height: 100vh;
+  }
+
+  .Home-Page-Img {
+    position: relative;
+    height: 320px;
+    overflow: hidden;
+  }
+
+  .Home-Page-Img img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center; 
+  }
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6rem;
+  width: 100%;
+}
+
+.HårAvAlice {
+  font-size: 2rem;
+  width: 50%;
+}
+
+.meny {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.3rem;
+  height: 6rem;
+  width: 50%;
+}
+
+
+.Home-Page-Img {
+  min-height: 90vh;
+  p {
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+  }
+  img {
+      display: flex;
+      border-radius: 1.25rem;
+      height: 35rem;
+      width: 100%;
+      object-fit: cover;
+      object-position: 75% 25%;
+    }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.AboutMe-StartPage {
+  min-height: 70vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.AboutMe-StartPage-Text {
+  min-width: 45%;
+  p {
+    font-size: 1.4rem;
+  }
+
+  button {
+    width: 8rem;
+    height: 2rem;
+    border-radius: 1rem;
+    border: 1px solid black;
+    background-color: white;
+    margin-top: 1.2rem;
+    font-size: 12px;
+  }
+}
+
+.AboutMe-StartPage-Bild {
+  min-width: 45%;
+
+  img {
+    border-radius: 1.25rem;
+    min-height: 25rem;
+    width: 100%;
+    object-fit: cover;
+    object-position: 75% 25%;
+  }
+}
+
+/* services */
+
+.serviceDiv {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-header {
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.Service-Split {
+  display: flex;
+  gap: 2rem;
+}
+
+.Service-Card {
+  position: relative; /* 👈 superviktig */
+  width: 100%;
+}
+
+.Service-Card img {
+  width: 100%;
+  display: block;
+  max-height: 30rem;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.Service-Box {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+
+  background-color: pink;
+  padding: 1.5rem;
+  max-width: 70%;
+  border-radius: 10px;
+
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+
+  z-index: 2;
+}
+
+.Service-Card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+
+
+/* Ibland kan det vara stressfylld dag */
+
+.Costumer-Img {
+  position: relative;
+}
+
+.Costumer-Img img {
+  width: 100%;
+  display: flex;
+  border-radius: 1.25rem;
+  height: 35rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.Costumer-Text {
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  z-index: 2;
+}
+
+.Costumer-Img::after {
+  content: "";
+  border-radius: 1.25rem;
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+}
+
+/* Q and A */
+
+.Questions-Page {
+  margin-top: 10rem;
+  height: 100vh;
+  display: flex;
+}
+
+.Questions-Header {
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+  min-width: 50%;
+  p{
+    min-width: 20rem;
+  }
+}
+
+.Questions-List {
+  min-height: 80vh;
+  min-width: 50%;
+  .faq {
+    border-radius: 10px;
+    padding: 15px;
+    background-color: rgb(236, 214, 218);
+    overflow: hidden;
+    transition: 0.6s ease;
+  }
+  .faq.open {
+  background-color: rgb(236, 214, 218);
+  transition: 0.6s ease;
+  }
+  .que {
+    cursor: pointer;
+    font-weight: 600;
+  }
+  .ans {
+    max-height: 0;
+    margin-top: 0.5rem; 
+    opacity: 0;
+    transform: translateY(-5px);
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 15px;
+    transition: max-height 0.6s ease, padding 0.6s ease;
+  }
+}
+
+summary {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+summary::after {
+  content: "▾";
+  font-size: 1.2rem;
+  transition: transform 0.2s ease;
+}
+
+
+details[open] summary::after {
+  transform: rotate(180deg);
+}
+
+details[open] .ans {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.faq.open .ans {
+  max-height: 500px;
+  padding: 15px;
+}
+
+
+
+/* mobilversion start */
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+
+  .Home-Page-Img { 
+    min-height: auto;
+    height: 260px;
+    overflow: hidden;
+    margin-bottom: 4rem;
+  }
+
+  .Home-Page-Img img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .Service-StartPage-Uppsättningar-Input,
+  .Service-StartPage-Klippningar-Input {
+    width: 90%;
+    max-width: 90%;
+    min-height: auto;
+    box-sizing: border-box;
+    margin: 0 0 1rem 0;
+  }
+
+  .Service,
+  .HomeToCostumer-Page,
+  .Questions-Header,
+  .Questions-List {
+    height: auto;
+    min-height: 0;
+  }
+
+  .AboutMe-StartPage,
+  .Service,
+  .HomeToCostumer-Page,
+  .Questions-Page {
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .Home-Page-Img img { object-position: 65% 35% !important; }
+}

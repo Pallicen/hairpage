@@ -1,0 +1,9 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+.AboutMePage, .BookingPage, .ImagePage, .HomePage {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}

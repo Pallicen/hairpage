@@ -1,0 +1,128 @@
+
+
+
+.OmMig-Header {
+  min-height: 10vh;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+}
+
+.OmMig-Page {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6rem;
+}
+
+.OmMig-Text {
+  width: 35rem;
+  h3 {
+    font-size: 1.6rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+.OmMig-Img, .OmMig-Img2 {
+  img {
+    width: 25rem;
+    object-fit: cover;
+    object-position: 75% 25%;
+    border-radius: 1.25rem;
+  }
+}
+
+.AboutMe-BetweenSpace {
+  min-height: 20vh;
+}
+
+.KontaktaMig-Page {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6rem;
+}
+
+.KontaktaMig-Text {
+  min-width: 35rem;
+  h3 {
+    font-size: 1.6rem;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+}
+.KontaktaMig-Telefon, .KontaktaMig-Mejl, .KontaktaMig-Instagram {
+    display: flex;
+    min-width: 35rem;
+    height: 2.5rem;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+}
+.KontaktaMig-Instagram:hover {
+  a {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+.Bokning-Page {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10rem;
+}
+
+.Bokning-Page p {
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.Bokning-Page h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+
+/* mobilversion start */
+@media (max-width: 768px) {
+  .OmMig-Page,
+  .KontaktaMig-Page {
+    flex-direction: column;
+    height: auto;
+    gap: 1.5rem;
+    align-items: stretch;
+  }
+
+  .OmMig-Text,
+  .KontaktaMig-Text {
+    width: 100%;
+  }
+
+  .OmMig-Img img {
+    width: 100%;
+    max-width: 28rem;
+  }
+
+    .OmMig-Img2 img {
+    width: 100%;
+    max-width: 28rem;
+  }
+
+  .KontaktaMig-Telefon,
+  .KontaktaMig-Mejl,
+  .KontaktaMig-Instagram {
+    width: 100%;
+    height: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .OmMig-Img2 { order: 2; }
+  .KontaktaMig-Text { order: 1; }
+}
