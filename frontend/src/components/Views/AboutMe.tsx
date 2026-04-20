@@ -34,7 +34,7 @@ const AboutMe = () => {
     </div>
 
     <div className="KontaktaMig-Text">
-      <h3>Kontakta mig</h3>
+      <h3>Kontakt</h3>
       <br />
       <div><p>Du kan nå mig på både SMS och Mejl, jag brukar svara något snabbare på SMS.</p></div>
       <br /> <br />

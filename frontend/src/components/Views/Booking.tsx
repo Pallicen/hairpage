@@ -1,30 +1,58 @@
+import { useForm } from "react-hook-form";
 
 const Booking = () => {
+
+  const { register, handleSubmit } = useForm();
+
+  const onSubmit = (data) => {
+    console.log(data);
+  };
+
   return (
+
     <div className="BookingPage">
 
-  <div className="Bokning-Page">
+      <div className="bookingPage-header">
+      <p>Fyll i formuläret så återkommer jag inom 24h med pris och tillgänglighet.</p>
+      </div>
 
-  <div className="KontaktaMig-Page">
+ <div className="bookingFormDiv">
+    <div className="bookingForm">
 
-  <div className="KontaktaMig-Text">
-    <h3>Boka tid</h3>
-    <br />
-    <div><p>Du kan nå mig på både SMS och Mejl, jag brukar svara något snabbare på SMS.</p></div>
-    <br /> <br />
-  <div className="KontaktaMig-Telefon"><p>Telefon</p><p>0722194008</p></div>
-    <br />
-    <div className="KontaktaMig-Mejl"><p>Mejl</p><p>alice.lindkvist1@hotmail.com</p></div>
-    <br />
-    <div className="KontaktaMig-Instagram"><p>Följ mig</p><p><a href="https://www.instagram.com/hairstyles_alice/" target="_blank">Instagram</a></p></div>
-  </div>
+    <form className="form" onSubmit={handleSubmit(onSubmit)}>
 
-  </div>
+      <input className="booking-input" {...register("name")} placeholder="Name" />
 
+      <select className="select" {...register("hairupdo")}>
+      <option>Välj</option>
+      <option>Bal</option>
+      <option>Bröllop</option>
+      <option>Klippning</option>
+      </select>
+       
+      <input className="booking-input" {...register("costumers")} placeholder="Antal personer" />
+      <input className="booking-input" {...register("date")} type="date" />
+
+      <input className="booking-input" {...register("city")} placeholder="Stad/område" />
+
+      <input className="booking-input" {...register("decription")} placeholder="Valfri beskrivning" />
+
+      <button type="submit">Skicka förfrågan</button>
+    </form>
+
+    </div>
   </div>
 
     </div>
-  )
+  );
 }
 
 export default Booking;
+
+
+// Namn
+// Datum för event
+// Bal / Bröllop / Annat
+// Plats (stad/område)
+// Kort beskrivning
+// (Valfritt men guld värt) bild-inspiration
