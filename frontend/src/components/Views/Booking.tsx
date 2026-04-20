@@ -1,11 +1,37 @@
 import { useForm } from "react-hook-form";
+import emailjs from "@emailjs/browser";
+import { useState } from 'react';
 
 const Booking = () => {
 
+  const [success, setSuccess] = useState(false);
+
   const { register, handleSubmit } = useForm();
 
+
+
   const onSubmit = (data) => {
-    console.log(data);
+    emailjs.send(
+      "service_o4v7kyl",
+      "template_5grdwnq",
+      {
+        name: data.name,
+        email: data.email,
+        phone: data.phone,
+        hairupdo: data.hairupdo,
+        date: data.date,
+        costumers: data.costumers,
+        city: data.city,
+        description: data.description
+      },
+      "HJ_n2zNDsnPluGk2U"
+        ).then(() => {
+        setSuccess(true);
+
+        setTimeout(() => {
+          setSuccess(false);
+        }, 5000);
+      });
   };
 
   return (
@@ -22,6 +48,8 @@ const Booking = () => {
     <form className="form" onSubmit={handleSubmit(onSubmit)}>
 
       <input className="booking-input" {...register("name")} placeholder="Name" />
+      <input className="booking-input" {...register("email")} placeholder="E-post" />
+      <input className="booking-input" {...register("phone")} placeholder="Telefonnummer" />
 
       <select className="select" {...register("hairupdo")}>
       <option>Välj</option>
@@ -35,9 +63,10 @@ const Booking = () => {
 
       <input className="booking-input" {...register("city")} placeholder="Stad/område" />
 
-      <input className="booking-input" {...register("decription")} placeholder="Valfri beskrivning" />
+      <input className="booking-input" {...register("description")} placeholder="Beskrivning(valfri)" />
 
-      <button type="submit">Skicka förfrågan</button>
+      <button className={success ? "bookingBtn success" : "bookingBtn"} type="submit">Skicka förfrågan</button>
+      {success && <p className="successText">Mail skickat ✔</p>}
     </form>
 
     </div>
@@ -48,11 +77,3 @@ const Booking = () => {
 }
 
 export default Booking;
-
-
-// Namn
-// Datum för event
-// Bal / Bröllop / Annat
-// Plats (stad/område)
-// Kort beskrivning
-// (Valfritt men guld värt) bild-inspiration

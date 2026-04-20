@@ -24,19 +24,18 @@
 
 .bookingFormDiv {
   display: flex;
-  align-items: center;
+  margin-bottom: 10rem;
 }
 
 .bookingForm {
   display: flex;
   align-items: center;
-  justify-content: center;
   height: 35rem;
   width: 48%;
 }
 
 .form {
-  width: 500px;
+  width: 100%;
 }
 
 .bookingForm input {
@@ -44,6 +43,7 @@
   border: 1px solid #ccc;
   border-radius: 12px;
   height: 1.6rem;
+  font-size: 1rem;
 }
 
 .select {
@@ -72,4 +72,10 @@
   height: 2.8rem;
   color: white;
   cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.successText {
+  color: rgb(23, 82, 23);
+  font-size: 1.2rem;
 }
