@@ -44,6 +44,12 @@
 
 .hamburger {
   position: fixed;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 0.6rem;
+  padding-top: 0.6rem;
+  border-radius: 1rem;
+  background-color: rgb(255, 255, 255, 0.5);
 }
 
 .hamburger.open .bar:nth-child(1) {

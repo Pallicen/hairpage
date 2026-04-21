@@ -21,7 +21,7 @@
 }
 
 .OmMig-Text {
-  max-width: 48%;
+  width: 48%;
   h3 {
     font-size: 1.6rem;
   }
@@ -42,7 +42,7 @@
 
 
 .KontaktaMig-Page {
-  height: 40rem;
+  min-height: 40rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -60,10 +60,10 @@
   }
 }
 .KontaktaMig-Telefon, .KontaktaMig-Mejl, .KontaktaMig-Instagram {
-    display: flex;
-    height: 2.5rem;
-    justify-content: space-between;
-    border-bottom: 2px solid black;
+  display: flex;
+  height: 2.5rem;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
 }
 
 
@@ -81,4 +81,42 @@
 .Bokning-Page h3 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .AboutMePage {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .OmMig-Page {
+    display: grid;
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .OmMig-Text {
+    width: 100%;
+  }
+
+  .AboutMe-Img {
+    width: 100%;
+  }
+
+  .KontaktaMig-Page {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 40rem;
+  }
+
+  .AboutMe-Img2 {
+    order: 2;
+  }
+
+  .KontaktaMig-Text {
+    order: 1;
+    width: 100%;
+  }
+
+
 }
