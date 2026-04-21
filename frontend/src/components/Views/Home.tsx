@@ -18,6 +18,7 @@ const Home = () => {
 
 
     <div className="AboutMe-StartPage">
+
       <div className="AboutMe-StartPage-Text">
         <p>Hej! Jag heter Alice, 24 år från Jönköping, 
         och har en stark passion för håruppsättningar. 
@@ -29,6 +30,7 @@ const Home = () => {
       <div className="AboutMe-StartPage-Bild">
          <img src={homeImage} alt="bild" />
       </div>
+      
     </div>
 
 

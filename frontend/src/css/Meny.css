@@ -16,17 +16,142 @@
   align-items: center;
   gap: 2.6rem;
   font-size: 1.2rem;
+}
 
-  .bookMeBtn {
-    width: 6.4rem;
-    height: 2.4rem;
-    border-radius: 20px;
-    background-color: rgb(60, 10, 10);
-    border: none;
+.bookMeBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 5.6rem;
+  height: 2.1rem;
+  border-radius: 2rem;
+  background-color: rgb(60, 10, 10);
+  border: none;
+  color: white;
+  font-size: 1.05rem;
+  padding: 6px;
+}
+
+.bookMeBtn:hover {
+  transition: all 0.4s ease;
+  background-color: rgb(95, 43, 43);
+}
+
+.bookMeBtn:active {
+ background-color: rgb(95, 43, 43);
+}
+
+.hamburger {
+  position: fixed;
+}
+
+.hamburger.open .bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open .bar:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* -- MOBIL MENU -- */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+
+  background-color: rgb(236, 214, 218);
+
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+
+  z-index: 999;
+}
+
+.links-in-hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  text-align: center;
+  height: 65%;
+  gap: 3.5rem;
+  font-size: 2rem;
+}
+
+.mobile-menu.open {
+  transform: translateX(0);
+}
+
+  .contact-hamburger-menu-div {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    width: 100%;
+    height: 30%;
+  }
+  
+  .contact-hamburger-menu {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    background-color: white;
+    height: 7rem;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    gap: 1rem;
+    padding: 1rem;
+
+    .p-contact-hamburger {
+      font-weight: 600;
+    }
+    
+    p {
+      margin-left: 1.1rem;
+    }
   }
 
-  .link {
-    color: white;
-    font-size: 1rem;
+
+@media (max-width: 768px) {
+
+  .bookMeBtn {
+    width: 7rem;
+    height: 3rem;
+    border-radius: 2rem;
+    font-size: 1.35rem;
+    padding: 6px;
+  }
+
+  .hamburger {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+
+  .bar {
+    width: 25px;
+    height: 3px;
+    background: black;
+    margin: 5px 0;
+    transition: 0.3s;
+  }
+
+  .menyLinks {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
   }
 }

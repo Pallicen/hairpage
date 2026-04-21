@@ -49,11 +49,16 @@ a {
   color: black;
 }
 
+
+/* Om mig på start/hemsida */
+
 .AboutMe-StartPage {
-  min-height: 70vh;
+  min-height: 80vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
 }
 
 .AboutMe-StartPage-Text {
@@ -84,6 +89,24 @@ a {
     object-position: 75% 25%;
   }
 }
+
+
+@media (max-width: 768px) {
+
+  .AboutMe-StartPage {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .AboutMe-StartPage-Text,
+  .AboutMe-StartPage-Bild {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+
 
 /* services */
 
@@ -133,6 +156,7 @@ a {
   border-radius: 10px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
   z-index: 2;
+  font-size: 0.9rem;
 
   h2 {
     margin-bottom: 1rem;
@@ -140,12 +164,11 @@ a {
 
 
   button {
-    width: 12rem;
-    height: 2.2rem;
-    border-radius: 16px;
+    width: 10.6rem;
+    height: 2.6rem;
+    border-radius: 2rem;
     background-color: rgb(60, 10, 10);
     border: none;
-
   }
 
   .text-bold {
@@ -154,7 +177,7 @@ a {
 
   .link {
     color: white;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -166,8 +189,59 @@ a {
   border-radius: 10px;
 }
 
+@media (max-width: 768px) {
+
+  .service-header {
+    height: auto;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .Service-Split {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .Service-Card {
+    width: 100%;
+  }
+
+  .Service-Card img, .Service-Card::after {
+    max-height: 40rem;
+    width: 100%;
+  }
+
+  .Service-Box {
+    width: 100%;
+    max-height: 12rem;
+
+    h2 {
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+    button {
+      width: 8.6rem;
+      height: 1.8rem;
+    }
+
+    .link {
+      font-size: 12px;
+    }
+  }
+
+}
+
 
 /* Ibland kan det vara stressfylld dag */
+
+.HomeToCostumer-Page {
+  height: 65vh;
+  margin-top: 4rem;
+}
 
 .Costumer-Img {
   position: relative;
@@ -201,6 +275,15 @@ a {
   inset: 0;
   background: rgba(0,0,0,0.4);
 }
+
+@media (max-width: 768px) {
+
+  .Costumer-Text {
+    font-size: 1.6rem;
+  }
+
+}
+
 
 /* Q and A */
 
