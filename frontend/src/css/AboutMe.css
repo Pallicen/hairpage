@@ -13,11 +13,12 @@
 }
 
 .OmMig-Page {
-  height: 40rem;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 6rem;
+  margin-bottom: 4rem;
 }
 
 .OmMig-Text {
@@ -90,7 +91,7 @@
   }
 
   .OmMig-Page {
-    height: 120vh;
+    height: 115vh;
     display: grid;
     width: 100%;
     min-width: 100%;

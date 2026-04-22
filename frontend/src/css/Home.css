@@ -57,7 +57,7 @@ a {
 /* Om mig på start/hemsida */
 
 .AboutMe-StartPage {
-  min-height: 80vh;
+  min-height: 75vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -195,8 +195,8 @@ a {
 @media (max-width: 768px) {
 
   .serviceDiv {
-    height: 115vh;
-    margin-top: 6rem;
+    height: 120vh;
+    margin-top: 10rem;
   }
 
   .service-header {
@@ -247,7 +247,7 @@ a {
 /* Ibland kan det vara stressfylld dag */
 
 .HomeToCostumer-Page {
-  height: 80vh;
+  height: 100vh;
   margin-top: 4rem;
 }
 
