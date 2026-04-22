@@ -8,6 +8,13 @@
   padding-right: 2rem;
 }
 
+@media (max-width: 768px) {
+  .AboutMePage, .BookingPage, .ImagePage, .HomePage, .header {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+}
+
 footer {
   height: 80vh;
   background-color: rgb(185, 178, 178);
