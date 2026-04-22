@@ -108,10 +108,10 @@
 
   .KontaktaMig-Page {
     display: grid;
-    height: 100vh;
+    min-height: 110vh;
     grid-template-columns: 1fr;
-    margin-top: 16rem;
-    margin-bottom: 10rem;
+    margin-top: 20rem;
+    margin-bottom: 14rem;
   }
 
   .AboutMe-Img2 {
