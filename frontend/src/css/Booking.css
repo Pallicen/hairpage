@@ -12,6 +12,7 @@
   gap: 2rem;
   height: 10rem;
   font-size: 1.4rem;
+  margin-bottom: 2rem;
 }
 
 
@@ -73,6 +74,11 @@
   color: white;
   cursor: pointer;
   transition: 0.2s ease;
+  font-size: 1.2rem;
+}
+
+.bookingForm button:hover {
+  background-color: #380d0d;
 }
 
 .successText {

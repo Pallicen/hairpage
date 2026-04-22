@@ -64,7 +64,7 @@ const Meny = () => {
           <Link to="/">Hem</Link>
           <Link to="/ImagePage">Håruppsättningar</Link>
           <Link to="/AboutMePage">Om Mig</Link>
-          <Link className="bookMeBtn" to="/BookingPage" onClick={toggleMenu}>Boka Mig</Link>
+          <Link className="bookMeBtn" to="/BookingPage">Boka Mig</Link>
       </div>
 
     </div>
