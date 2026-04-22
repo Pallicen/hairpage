@@ -2,15 +2,25 @@ import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
 import { useState } from 'react';
 
+type BookingFormData = {
+    name: string;
+    email: string;
+    phone: string;
+    hairupdo: string;
+    date: string;
+    costumers: string;
+    city: string;
+    description: string;
+  };
+  
 const Booking = () => {
 
   const [success, setSuccess] = useState(false);
 
-  const { register, handleSubmit } = useForm();
+  const { register, handleSubmit } = useForm<BookingFormData>();
 
 
-
-  const onSubmit = (data) => {
+  const onSubmit = (data: BookingFormData) => {
     emailjs.send(
       "service_o4v7kyl",
       "template_5grdwnq",
