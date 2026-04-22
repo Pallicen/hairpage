@@ -141,7 +141,7 @@ a {
   display: block;
   max-height: 30rem;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .Service-Box {
@@ -156,7 +156,7 @@ a {
   max-width: 70%;
   min-width: 70%;
   min-height: 45%;
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
   z-index: 2;
   font-size: 0.9rem;
@@ -189,10 +189,15 @@ a {
   position: absolute;
   inset: 0;
   background: rgba(0,0,0,0.2);
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 @media (max-width: 768px) {
+
+  .serviceDiv {
+    height: 115vh;
+    margin-top: 6rem;
+  }
 
   .service-header {
     height: auto;
@@ -286,7 +291,7 @@ a {
   }
 
   .HomeToCostumer-Page {
-    height: 65vh;
+    height: 80vh;
   }
 
 }
@@ -295,7 +300,6 @@ a {
 /* Q and A */
 
 .Questions-Page {
-  margin-top: 10rem;
   height: 100vh;
   display: flex;
 }
@@ -320,7 +324,7 @@ a {
   background-color: rgb(236, 214, 218);
   overflow: hidden;
   transition: 0.3s ease;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
 }
 
 .que {

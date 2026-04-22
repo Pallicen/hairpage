@@ -24,8 +24,7 @@ const AboutMe = () => {
     </div>
 
     </div>
-
-    <div className="AboutMe-BetweenSpace"></div>
+    
 
     <div className="KontaktaMig-Page">
 

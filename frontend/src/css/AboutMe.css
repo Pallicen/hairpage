@@ -4,7 +4,7 @@
 }
 
 .OmMig-Header {
-  min-height: 10vh;
+  min-height: 15vh;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -42,7 +42,7 @@
 
 
 .KontaktaMig-Page {
-  min-height: 40rem;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -90,6 +90,7 @@
   }
 
   .OmMig-Page {
+    height: 120vh;
     display: grid;
     width: 100%;
     min-width: 100%;
@@ -106,8 +107,10 @@
 
   .KontaktaMig-Page {
     display: grid;
+    height: 100vh;
     grid-template-columns: 1fr;
-    margin-top: 40rem;
+    margin-top: 16rem;
+    margin-bottom: 10rem;
   }
 
   .AboutMe-Img2 {
