@@ -62,7 +62,7 @@ const Booking = () => {
       <input className="booking-input" {...register("phone")} placeholder="Telefonnummer" />
 
       <select className="select" {...register("hairupdo")}>
-      <option>Välj</option>
+      <option>Välj tjänst</option>
       <option>Bal</option>
       <option>Bröllop</option>
       <option>Klippning</option>

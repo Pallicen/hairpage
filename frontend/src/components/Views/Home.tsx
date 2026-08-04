@@ -1,5 +1,9 @@
 import { Link } from 'react-router-dom';
-import homeImage from '../../Assets/homePage.png'
+import homeImage from '../../Assets/homepagen.png'
+import homeImageAboutMe from '../../Assets/aboutMe.png'
+import homeImageSaxar from '../../Assets/sax.png'
+import homeImageUpdo from '../../Assets/1.png'
+import homeImageBraiding from '../../Assets/braiding.png'
 
 const Home = () => {
   return (
@@ -28,7 +32,7 @@ const Home = () => {
       </div>
 
       <div className="AboutMe-StartPage-Bild">
-         <img src={homeImage} alt="bild" />
+         <img src={homeImageAboutMe} alt="bild" />
       </div>
       
     </div>
@@ -46,7 +50,7 @@ const Home = () => {
         <div className="Service-Split">
 
         <div className="Service-Card">
-          <img src={homeImage} alt="bild" />
+          <img src={homeImageUpdo} alt="bild" />
       
         <div className="Service-Box">
           <h2>Håruppsättningar</h2>
@@ -61,10 +65,10 @@ const Home = () => {
         </div>
 
         <div className="Service-Card">
-          <img src={homeImage} alt="bild" />
+          <img src={homeImageSaxar} alt="bild" />
       
         <div className="Service-Box">
-          <h2>Håruppsättningar</h2>
+          <h2>Klippningar</h2>
           <p>Jag klipper längre hår, ungefär från axlar och ner.</p>
           <br />
           <p><span className="text-bold">Klippning</span> 350kr</p>
@@ -84,7 +88,7 @@ const Home = () => {
     <div className="HomeToCostumer-Page">
 
       <div className="Costumer-Img">
-        <img src={homeImage} alt="bild" />
+        <img src={homeImageBraiding} alt="bild" />
         <div className="Costumer-Text">
         <p>Ibland kan det vara en stressfylld dag inför ett festligt tillfälle, och för att underlätta detta erbjuder jag mig att resa till dig.</p>
         </div>

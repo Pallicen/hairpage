@@ -1,4 +1,5 @@
-import image from '../../Assets/2.png'
+import aboutMeImage from '../../Assets/meBraiding.png'
+import contactImage from '../../Assets/aboutMe.png'
 
 const AboutMe = () => {
   return (
@@ -20,7 +21,7 @@ const AboutMe = () => {
       Idag är kontot inte längre aktivt, men skapandet finns kvar. Jag gör fortfarande frisyrer när tillfälle ges – till bröllop, bal och andra stunder.</p>
       </div>
       <div className="AboutMe-Img">
-      <img src={image} alt='bild' />
+      <img src={aboutMeImage} alt='bild' />
     </div>
 
     </div>
@@ -29,7 +30,7 @@ const AboutMe = () => {
     <div className="KontaktaMig-Page">
 
     <div className="AboutMe-Img2">
-      <img src={image} alt='bild' />
+      <img src={contactImage} alt='bild' />
     </div>
 
     <div className="KontaktaMig-Text">
