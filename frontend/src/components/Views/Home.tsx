@@ -110,36 +110,35 @@ const Home = () => {
         <summary className="que">Hur långt i förväg behöver jag boka?</summary>
         <div className="ans">Du kan tidigast boka 1 år i förväg och senast 1 månad innan. Med mindre framförhållning finns det risk för att jag inte kan.</div>
       </details>
-      <br />
+      
       <details className="faq">
         <summary className="que">Kan man boka provfrisyr?</summary>
-        <div className="ans">Ja, vill man boka provfrisyr går det bra. Den görs hemma hos mig och kostar 150kr som läggs till på slutpriset.</div>
+        <div className="ans">Ja, vill man boka provfrisyr går det bra. Den görs hemma hos mig och kostar 150kr.</div>
       </details>
-      <br />
+
       <details className="faq">
         <summary className="que">Hur långt kan du resa och tar du betalt för den?</summary>
-        <div className="ans">Jag reser upp till 16 mil från Jönköping Central. Över 2 mil till kund kommer en avgift på 20kr/mil på resterande mil. </div>
+        <div className="ans">Jag reser upp till 16 mil från Jönköping Central. Det tillkommer en avgift på 25kr/mil. </div>
       </details>
-      <br />
+
       <details className="faq">
         <summary className="que">Går det boka för fler personer, till exempel tärnor?</summary>
         <div className="ans">Det går jättebra. För tärnor utöver brud dras 100kr/person av på priset.</div>
       </details>
-      <br />
+
       <details className="faq">
         <summary className="que">Hur lång tid tar det att göra en uppsättning?</summary>
         <div className="ans">Det tar från ca 30 min till ca 2 timmar beroende på uppsättning.</div>
       </details>
-      <br />
+
       <details className="faq">
       <summary className="que">Hur sker betalningen?</summary>
         <div className="ans">Betalningen sker via swish.</div>
       </details>
-      <br />
+
       <details className="faq">
         <summary className="que">Vad händer om jag behöver avboka?</summary>
-        <div className="ans">Avbokning ska ske senast 24h innan bokad tid.
-        Jag ansvarar inte för kostnader eller skador som uppstår till följd av avbokning från min sida på grund av sjukdom eller annan oförutsedd händelse. Jag försöker i möjligaste mån hjälpa till att hitta en ersättare, men kan inte garantera detta.</div>
+        <div className="ans">Jag ansvarar inte för kostnader eller skador som uppstår till följd av avbokning från min sida på grund av sjukdom eller annan oförutsedd händelse.</div>
       </details>
 
       </div>

@@ -11,6 +11,7 @@ import Home from './components/Views/Home'
 import Image from './components/Views/Image'
 import AboutMe from './components/Views/AboutMe'
 import Booking from './components/Views/Booking'
+import StartInTop from './components/StartInTop'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
 
       <div className='meny'>
         <Meny />
+        <StartInTop />
       </div>
 
       <Routes>
@@ -29,7 +31,11 @@ function App() {
       </Routes>
 
       <footer>
-        <div>
+        <div className='footer'>
+          <a href="https://www.instagram.com/hairstyles_alice/">hairstyles_alice</a>
+          <a href='mailto:alice.lindkvist1@hotmail.com'>alice.lindkvist1@hotmail.com</a>
+          <a href='tel:+46722194008'>+46 722194008</a>
+          <p>&copy; 2026 Alice Hairtsyles</p>
         </div>
       </footer>
     </div>

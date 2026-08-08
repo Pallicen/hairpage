@@ -1,6 +1,7 @@
 
   .HomePage-startDiv {
     min-height: 100vh;
+    margin-bottom: 4rem;
   }
 
   .Home-Page-Img {
@@ -35,10 +36,10 @@
   img {
       display: flex;
       border-radius: 1.25rem;
-      height: 35rem;
+      min-height: 35rem;
       width: 100%;
       object-fit: cover;
-      object-position: 75% 25%;
+      object-position: 42% 58%;
     }
 }
 
@@ -50,6 +51,7 @@ a {
 @media (max-width: 768px) {
   .HomePage-startDiv {
     min-height: 90vh;
+    margin-bottom: 4rem;
   }
 }
 
@@ -114,7 +116,7 @@ a {
 /* services */
 
 .serviceDiv {
-  height: 100vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
 }
@@ -151,13 +153,12 @@ a {
   justify-content: space-around;
   bottom: 20px;
   left: 20px;
-  background-color:  rgb(236, 214, 218);
+  background-color:  #f7e6e5;
   padding: 1.5rem;
   max-width: 70%;
   min-width: 70%;
   min-height: 45%;
   border-radius: 20px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
   z-index: 2;
   font-size: 0.9rem;
 
@@ -170,8 +171,16 @@ a {
     width: 10.6rem;
     height: 2.6rem;
     border-radius: 2rem;
-    background-color: rgb(60, 10, 10);
+    background-color: #3e150b;
     border: none;
+  }
+
+  button:hover {
+    background-color: #f7e6e5;
+    border: 1px solid #3e150b;
+    a {
+      color: black;
+    }
   }
 
   .text-bold {
@@ -184,19 +193,18 @@ a {
   }
 }
 
-.Service-Card::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.2);
-  border-radius: 20px;
-}
+  .Service-Card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.2);
+    border-radius: 20px;
+  }
 
 @media (max-width: 768px) {
 
   .serviceDiv {
-    height: 120vh;
-    margin-top: 10rem;
+    height: 90vh;
   }
 
   .service-header {
@@ -215,7 +223,8 @@ a {
   }
 
   .Service-Card img, .Service-Card::after {
-    max-height: 40rem;
+    max-height: 30rem;
+    min-height: 22rem;
     width: 100%;
   }
 
@@ -232,8 +241,8 @@ a {
     }
 
     button {
-      width: 8.6rem;
-      height: 1.8rem;
+      width: 9rem;
+      height: 2.2rem;
     }
 
     .link {
@@ -248,16 +257,19 @@ a {
 
 .HomeToCostumer-Page {
   height: 100vh;
-  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .Costumer-Img {
   position: relative;
+  width: 100%;
 }
 
 .Costumer-Img img {
-  width: 100%;
-  display: flex;
+  display: block;
   border-radius: 1.25rem;
   height: 35rem;
   width: 100%;
@@ -266,7 +278,7 @@ a {
 
 .Costumer-Text {
   position: absolute;
-  width: 80%;
+  width: 50%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -288,10 +300,11 @@ a {
 
   .Costumer-Text {
     font-size: 1.6rem;
+    width: 80%;
   }
 
   .HomeToCostumer-Page {
-    height: 80vh;
+    min-height: 40rem;
   }
 
 }
@@ -300,13 +313,13 @@ a {
 /* Q and A */
 
 .Questions-Page {
-  height: 100vh;
+  height: 90vh;
   display: flex;
 }
 
 .Questions-Header {
-  margin-bottom: 2rem;
   font-size: 1.6rem;
+  height: 1rem;
   min-width: 50%;
   p{
     min-width: 20rem;
@@ -314,17 +327,19 @@ a {
 }
 
 .Questions-List {
-  min-height: 80vh;
+  height: 65vh;
   min-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .faq {
   border-radius: 10px;
   padding: 15px;
-  background-color: rgb(236, 214, 218);
+  background-color: #f7e6e5;
   overflow: hidden;
-  transition: 0.3s ease;
-  margin-bottom: 0.8rem;
+  transition: 0.3s ease-in-out;
 }
 
 .que {
@@ -336,7 +351,7 @@ a {
   opacity: 0;
   transform: translateY(-5px);
   overflow: hidden;
-  transition: all 0.4s ease;
+  transition: all 0.4s ease-in-out;
 }
 
 details[open] .ans {
@@ -357,7 +372,7 @@ summary {
 summary::after {
   content: "▾";
   font-size: 1.2rem;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease-in-out;
 }
 
 
@@ -366,9 +381,9 @@ details[open] summary::after {
 }
 
 @media (max-width: 768px) {
+
   .Questions-Page {
     display: grid;
-    margin-bottom: 2rem;
   }
 }
 

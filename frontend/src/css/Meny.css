@@ -26,20 +26,17 @@
   width: 5.6rem;
   height: 2.1rem;
   border-radius: 2rem;
-  background-color: rgb(60, 10, 10);
-  border: none;
+  background-color: #3e150b;
+  border: 1px solid #3e150b;
   color: white;
   font-size: 1.05rem;
   padding: 6px;
 }
 
 .bookMeBtn:hover {
-  transition: all 0.4s ease;
-  background-color: rgb(95, 43, 43);
-}
-
-.bookMeBtn:active {
- background-color: rgb(95, 43, 43);
+  color: black;
+  background-color: #f7e6e5;
+  border: 1px solid #3e150b;
 }
 
 .hamburger {

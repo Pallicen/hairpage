@@ -57,7 +57,7 @@ const Booking = () => {
 
     <form className="form" onSubmit={handleSubmit(onSubmit)}>
 
-      <input className="booking-input" {...register("name")} placeholder="Name" />
+      <input className="booking-input" {...register("name")} placeholder="Namn" />
       <input className="booking-input" {...register("email")} placeholder="E-post" />
       <input className="booking-input" {...register("phone")} placeholder="Telefonnummer" />
 
