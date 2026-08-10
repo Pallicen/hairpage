@@ -1,15 +1,10 @@
 
-
-.BookingPage {
-  min-height: 100vh;
-}
-
-
 .bookingPage-header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 2rem;
+  max-width: 40rem;
   height: 10rem;
   font-size: 1.4rem;
   margin-bottom: 2rem;

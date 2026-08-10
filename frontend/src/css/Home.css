@@ -1,7 +1,6 @@
 
   .HomePage-startDiv {
-    min-height: 100vh;
-    margin-bottom: 4rem;
+    height: 44rem;
   }
 
   .Home-Page-Img {
@@ -28,7 +27,7 @@
 
 
 .Home-Page-Img {
-  min-height: 60vh;
+  height: 44rem;
   p {
     font-size: 1.5rem;
     letter-spacing: 0.5px;
@@ -50,8 +49,7 @@ a {
 
 @media (max-width: 768px) {
   .HomePage-startDiv {
-    min-height: 90vh;
-    margin-bottom: 4rem;
+    height: 46rem;
   }
 }
 
@@ -59,15 +57,15 @@ a {
 /* Om mig på start/hemsida */
 
 .AboutMe-StartPage {
-  min-height: 75vh;
+  height: 42rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 6rem;
+  gap: 2rem;
 }
 
 .AboutMe-StartPage-Text {
-  max-width: 48%;
+  width: 48%;
   p {
     font-size: 1.4rem;
   }
@@ -84,14 +82,17 @@ a {
 }
 
 .AboutMe-StartPage-Bild {
-  max-width: 48%;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
 
   img {
     border-radius: 1.25rem;
-    min-height: 25rem;
+    height: 30rem;
     width: 100%;
+    display: block;
     object-fit: cover;
-    object-position: 75% 25%;
+    object-position: center; 
   }
 }
 
@@ -99,6 +100,7 @@ a {
 @media (max-width: 768px) {
 
   .AboutMe-StartPage {
+    height: 48rem;
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -106,7 +108,6 @@ a {
 
   .AboutMe-StartPage-Text,
   .AboutMe-StartPage-Bild {
-    max-width: 100%;
     width: 100%;
   }
 }
@@ -116,13 +117,13 @@ a {
 /* services */
 
 .serviceDiv {
-  height: 80vh;
+  height: 40rem;
   display: flex;
   flex-direction: column;
 }
 
 .service-header {
-  height: 20vh;
+  height: 8rem;
   display: flex;
   align-items: center;
   font-size: 2rem;
@@ -141,7 +142,7 @@ a {
 .Service-Card img {
   width: 100%;
   display: block;
-  max-height: 30rem;
+  height: 30rem;
   object-fit: cover;
   border-radius: 20px;
 }
@@ -204,7 +205,18 @@ a {
 @media (max-width: 768px) {
 
   .serviceDiv {
-    height: 90vh;
+    height: 66rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .service-header-div {
+    width: 100%;
+    display: flex;
+    text-align: left;
+    justify-content: start;
+    align-items: flex-start;
   }
 
   .service-header {
@@ -223,8 +235,7 @@ a {
   }
 
   .Service-Card img, .Service-Card::after {
-    max-height: 30rem;
-    min-height: 22rem;
+    height: 25rem;
     width: 100%;
   }
 
@@ -256,7 +267,7 @@ a {
 /* Ibland kan det vara stressfylld dag */
 
 .HomeToCostumer-Page {
-  height: 100vh;
+  height: 50rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -304,7 +315,7 @@ a {
   }
 
   .HomeToCostumer-Page {
-    min-height: 40rem;
+    height: 40rem;
   }
 
 }
@@ -315,6 +326,7 @@ a {
 .Questions-Page {
   height: 90vh;
   display: flex;
+  gap: 2rem;
 }
 
 .Questions-Header {
@@ -327,8 +339,8 @@ a {
 }
 
 .Questions-List {
-  height: 65vh;
-  min-width: 50%;
+  height: 32rem;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -384,6 +396,11 @@ details[open] summary::after {
 
   .Questions-Page {
     display: grid;
+    align-items: center;
+  }
+
+  .Questions-List {
+    width: 100%;
   }
 }
 

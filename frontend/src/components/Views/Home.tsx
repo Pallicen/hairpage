@@ -43,7 +43,7 @@ const Home = () => {
 
     <div className="serviceDiv">
 
-      <div>
+      <div className='service-header-div'>
         <p className="service-header">Tjänster</p>
       </div>
 

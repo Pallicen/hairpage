@@ -1,10 +1,7 @@
 
-.AboutMePage {
-  min-height: 110vh;
-}
 
 .OmMig-Header {
-  min-height: 15vh;
+  height: 10rem;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -13,12 +10,11 @@
 }
 
 .OmMig-Page {
-  height: 100vh;
+  height: 50rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 6rem;
-  margin-bottom: 4rem;
+  gap: 2rem;
 }
 
 .OmMig-Text {
@@ -32,19 +28,25 @@
 }
 
 .AboutMe-Img, .AboutMe-Img2 {
+
+  position: relative;
+  overflow: hidden;
+  width: 48%;
+
   img {
     display: flex;
     border-radius: 1.25rem;
-    min-height: 35rem;
-    max-height: 48rem;
+    height: 35rem;
     width: 100%;
+    display: block;
     object-fit: cover;
+    object-position: center; 
   }
 }
 
 
 .KontaktaMig-Page {
-  min-height: 100vh;
+  min-height: 44rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -92,10 +94,11 @@
   }
 
   .OmMig-Page {
-    height: 115vh;
+    height: 66rem;
     display: grid;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    min-width: 100%;
   }
 
   .OmMig-Text {
@@ -109,14 +112,15 @@
 
   .KontaktaMig-Page {
     display: grid;
-    min-height: 110vh;
+    height: 60rem;
     grid-template-columns: 1fr;
-    margin-top: 20rem;
+    margin-top: 8rem;
     margin-bottom: 14rem;
   }
 
   .AboutMe-Img2 {
     order: 2;
+    width: 100%;
   }
 
   .KontaktaMig-Text {
