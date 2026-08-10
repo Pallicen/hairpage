@@ -1,6 +1,10 @@
 
   .HomePage-startDiv {
     height: 44rem;
+
+    font-family: "Comic Neue", cursive;
+    font-weight: 700;
+    font-style: normal;
   }
 
   .Home-Page-Img {
@@ -62,6 +66,10 @@ a {
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
+
+  font-family: "Comic Neue", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .AboutMe-StartPage-Text {
@@ -127,6 +135,10 @@ a {
   display: flex;
   align-items: center;
   font-size: 2rem;
+
+  font-family: "Comic Neue", cursive;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .Service-Split {
@@ -137,6 +149,10 @@ a {
 .Service-Card {
   position: relative;
   width: 100%;
+
+  font-family: "Comic Neue", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .Service-Card img {
@@ -174,6 +190,10 @@ a {
     border-radius: 2rem;
     background-color: #3e150b;
     border: none;
+
+    font-family: "Comic Neue", cursive;
+    font-weight: 400;
+    font-style: normal;
   }
 
   button:hover {
@@ -272,6 +292,10 @@ a {
   justify-content: center;
   align-items: center;
   width: 100%;
+
+  font-family: "Comic Neue", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .Costumer-Img {
@@ -332,9 +356,14 @@ a {
 .Questions-Header {
   font-size: 1.6rem;
   min-width: 50%;
+  font-family: "Comic Neue", cursive;
+  font-weight: 700;
+  font-style: normal;
+
   p{
     min-width: 20rem;
   }
+
 }
 
 .Questions-List {
@@ -343,6 +372,10 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+
+  font-family: "Comic Neue", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .faq {

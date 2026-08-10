@@ -12,7 +12,7 @@ const AboutMe = () => {
     <div className="OmMig-Page">
 
     <div className="OmMig-Text">
-      <h3>Hur började intresse för hår, egentligen?</h3>
+      <p className='h3'>Hur började intresse för hår, egentligen?</p>
       <br />
       <p>För mig handlade det om nyfikenhet och kreativitet. På gymnasiet valde jag frisörutbildningen, men intresset började långt tidigare - hemma i vardagsrummet. Frisyrer som växte fram framför spegeln, hårnålar utspridda på bordet och min syster som tålmodigt ställde upp som modell och fotograf.
       <br /> <br /> 
@@ -34,7 +34,7 @@ const AboutMe = () => {
     </div>
 
     <div className="KontaktaMig-Text">
-      <h3>Kontakt</h3>
+      <p className='h3'>Kontakta mig</p>
       <br />
       <div><p>Du kan nå mig på både SMS och Mejl, jag brukar svara något snabbare på SMS.</p></div>
       <br /> <br />

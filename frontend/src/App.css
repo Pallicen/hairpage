@@ -20,7 +20,10 @@ body {
 }
 
 footer {
-  height: 20vh;
+  height: 10rem;
+  font-family: "Comic Neue", cursive;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .footer {
