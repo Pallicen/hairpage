@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
-import homeImage from '../../Assets/homepagen.png'
-import homeImageAboutMe from '../../Assets/aboutMe.png'
-import homeImageSaxar from '../../Assets/sax.png'
-import homeImageUpdo from '../../Assets/1.png'
-import homeImageBraiding from '../../Assets/braiding.png'
+import homeImage from '../../Assets/homepagen.webp'
+import homeImageAboutMe from '../../Assets/aboutMe.webp'
+import homeImageSaxar from '../../Assets/sax.webp'
+import homeImageUpdo from '../../Assets/1.webp'
+import homeImageBraiding from '../../Assets/braiding.webp'
 
 const Home = () => {
   return (

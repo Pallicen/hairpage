@@ -1,5 +1,5 @@
-import aboutMeImage from '../../Assets/meBraiding.png'
-import contactImage from '../../Assets/aboutMe.png'
+import aboutMeImage from '../../Assets/meBraiding.webp'
+import contactImage from '../../Assets/aboutMe.webp'
 
 const AboutMe = () => {
   return (
