@@ -39,8 +39,6 @@ const Home = () => {
 
 
 
-
-
     <div className="serviceDiv">
 
       <div className='service-header-div'>
@@ -56,8 +54,8 @@ const Home = () => {
           <h2>Håruppsättningar</h2>
           <p>Jag erbjuder ett flertal uppsättningar och diskuterar fram det bästa alternativet utifrån dina önskemål.</p>
           <br />
-          <p><span className="text-bold">Heluppsättning</span> från 700kr</p>
-          <p><span className="text-bold">Halvuppsättning</span> från 500kr</p>
+          <p><span className="text-bold">Heluppsättning</span> från 900kr</p>
+          <p><span className="text-bold">Halvuppsättning</span> från 700kr</p>
           <br />
           <button><Link className="link" to="./bookingPage">Boka håruppsättning</Link></button>
         </div>
@@ -83,8 +81,6 @@ const Home = () => {
     </div>
 
 
-
-
     <div className="HomeToCostumer-Page">
 
       <div className="Costumer-Img">
@@ -108,7 +104,7 @@ const Home = () => {
       
       <details className="faq">
         <summary className="que">Kan man boka provfrisyr?</summary>
-        <div className="ans">Ja, vill man boka provfrisyr går det bra. Den görs hemma hos mig och kostar 150kr.</div>
+        <div className="ans">Ja, vill man boka provfrisyr går det bra. Den görs hemma hos mig och kostar 200kr.</div>
       </details>
 
       <details className="faq">
