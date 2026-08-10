@@ -105,11 +105,6 @@ const Home = () => {
       </div>
 
       <div className="Questions-List">
-
-      <details className="faq">
-        <summary className="que">Hur långt i förväg behöver jag boka?</summary>
-        <div className="ans">Du kan tidigast boka 1 år i förväg och senast 1 månad innan. Med mindre framförhållning finns det risk för att jag inte kan.</div>
-      </details>
       
       <details className="faq">
         <summary className="que">Kan man boka provfrisyr?</summary>

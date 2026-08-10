@@ -94,7 +94,7 @@
   }
 
   .OmMig-Page {
-    height: 66rem;
+    height: 74rem;
     display: grid;
     justify-content: center;
     align-items: center;
@@ -112,7 +112,7 @@
 
   .KontaktaMig-Page {
     display: grid;
-    height: 60rem;
+    height: 54rem;
     grid-template-columns: 1fr;
     margin-top: 8rem;
     margin-bottom: 14rem;

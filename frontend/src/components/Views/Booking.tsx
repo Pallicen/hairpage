@@ -69,7 +69,7 @@ const Booking = () => {
       </select>
        
       <input className="booking-input" {...register("costumers")} placeholder="Antal personer" />
-      <input className="booking-input" {...register("date")} type="date" />
+      <input className="booking-input" placeholder="Datum" {...register("date")} type="date" />
 
       <input className="booking-input" {...register("city")} placeholder="Stad/område" />
 

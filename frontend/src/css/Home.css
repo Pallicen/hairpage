@@ -324,14 +324,13 @@ a {
 /* Q and A */
 
 .Questions-Page {
-  height: 90vh;
+  height: 40rem;
   display: flex;
   gap: 2rem;
 }
 
 .Questions-Header {
   font-size: 1.6rem;
-  height: 1rem;
   min-width: 50%;
   p{
     min-width: 20rem;
@@ -339,7 +338,7 @@ a {
 }
 
 .Questions-List {
-  height: 32rem;
+  height: 28rem;
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -397,6 +396,10 @@ details[open] summary::after {
   .Questions-Page {
     display: grid;
     align-items: center;
+    height: 34rem;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+    gap: 0rem;
   }
 
   .Questions-List {
