@@ -5,6 +5,7 @@ import image4 from '../../Assets/4.webp'
 import image5 from '../../Assets/5.webp'
 import image6 from '../../Assets/6.webp'
 import image7 from '../../Assets/7.webp'
+import image8 from '../../Assets/8.webp'
 import image9 from '../../Assets/9.webp'
 import image10 from '../../Assets/10.webp'
 import image11 from '../../Assets/11.webp'
@@ -14,6 +15,8 @@ import image14 from '../../Assets/14.webp'
 import image15 from '../../Assets/15.webp'
 import image16 from '../../Assets/16.webp'
 import image17 from '../../Assets/17.webp'
+import image19 from '../../Assets/19.webp'
+import image20 from '../../Assets/20.webp'
 
 const Image = () => {
   return (
@@ -30,6 +33,7 @@ const Image = () => {
           <img className="imgs" src={image5} alt='bild'/>
           <img className="imgs" src={image6} alt='bild'/>
           <img className="imgs" src={image7} alt='bild'/>
+          <img className="imgs" src={image8} alt='bild'/>
           <img className="imgs" src={image9} alt='bild'/>
           <img className="imgs" src={image10} alt='bild'/>
           <img className="imgs" src={image11} alt='bild'/>
@@ -39,6 +43,8 @@ const Image = () => {
           <img className="imgs" src={image15} alt='bild'/>
           <img className="imgs" src={image16} alt='bild'/>
           <img className="imgs" src={image17} alt='bild'/>
+          <img className="imgs" src={image19} alt='bild'/>
+          <img className="imgs" src={image20} alt='bild'/>
 
           </div>
 

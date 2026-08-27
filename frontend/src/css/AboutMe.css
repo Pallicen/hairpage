@@ -14,7 +14,7 @@
 }
 
 .OmMig-Page {
-  height: 50rem;
+  height: 60rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -45,17 +45,17 @@
   img {
     display: flex;
     border-radius: 1.25rem;
-    height: 35rem;
+    height: 46rem;
     width: 100%;
     display: block;
     object-fit: cover;
-    object-position: center; 
+    object-position: 30% 30%;
   }
 }
 
 
 .KontaktaMig-Page {
-  min-height: 44rem;
+  min-height: 54rem;
   display: flex;
   align-items: center;
   justify-content: space-between;

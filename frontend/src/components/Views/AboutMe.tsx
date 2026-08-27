@@ -14,11 +14,11 @@ const AboutMe = () => {
     <div className="OmMig-Text">
       <p className='h3'>Hur började intresse för hår, egentligen?</p>
       <br />
-      <p>För mig handlade det om nyfikenhet och kreativitet. På gymnasiet valde jag frisörutbildningen, men intresset började långt tidigare - hemma i vardagsrummet. Frisyrer som växte fram framför spegeln, hårnålar utspridda på bordet och min syster som tålmodigt ställde upp som modell och fotograf.
+      <p>För mig handlade det om nyfikenhet och kreativitet inom hår. På gymnasiet valde jag frisörutbildningen, men intresset började långt tidigare - hemma i vardagsrummet. Frisyrer som växte fram framför spegeln, hårnålar utspridda på bordet, och min syster och far som tålmodigt ställde upp som fotograf.
       <br /> <br /> 
       Till slut blev det för roligt för att inte dela. Alice hairstyles började som ett Instagramkonto mest på skoj, en plats att samla idéer och inspiration. Men idéerna fortsatte att flöda, bilderna blev fler och kontot växte till över 10 000 följare.
       <br /> <br />
-      Idag är kontot inte längre aktivt, men skapandet finns kvar. Jag gör fortfarande frisyrer när tillfälle ges – till bröllop, bal och andra stunder.</p>
+      Idag är kontot inte längre lika aktivt, men skapandet finns kvar. Jag gör fortfarande frisyrer när tillfälle ges – till bröllop, bal och andra stunder.</p>
       </div>
       <div className="AboutMe-Img">
       <img src={aboutMeImage} alt='bild' />

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import homeImage from '../../Assets/homepagen.webp'
-import homeImageAboutMe from '../../Assets/aboutMe.webp'
+import homeImageAboutMe from '../../Assets/aboutMeHome.webp'
 import homeImageSaxar from '../../Assets/sax.webp'
 import homeImageUpdo from '../../Assets/1.webp'
 import homeImageBraiding from '../../Assets/braiding.webp'
@@ -27,7 +27,7 @@ const Home = () => {
         <p>Hej! Jag heter Alice, 24 år från Jönköping, 
         och har en stark passion för håruppsättningar. 
         Jag gick frisörlinjen på gymnasiet och har gjort flera bal- och bröllopsuppsättningar, 
-        och genom denna sida vill jag nå ut till fler.</p>
+        och genom denna sida vill jag nå ut till fler!</p>
         <button> <Link className="link" to="./AboutMePage">Läs mer om mig</Link></button>
       </div>
 
@@ -86,7 +86,7 @@ const Home = () => {
       <div className="Costumer-Img">
         <img src={homeImageBraiding} alt="bild" />
         <div className="Costumer-Text">
-        <p>Ibland kan det vara en stressfylld dag inför ett festligt tillfälle, och för att underlätta detta erbjuder jag mig att resa till dig.</p>
+        <p>Ibland kan det vara en stressfylld dag inför ett festligt tillfälle, och för att underlätta detta erbjuder jag mig att resa till dig</p>
         </div>
       </div>
     </div>
@@ -104,17 +104,17 @@ const Home = () => {
       
       <details className="faq">
         <summary className="que">Kan man boka provfrisyr?</summary>
-        <div className="ans">Ja, vill man boka provfrisyr går det bra. Den görs hemma hos mig och kostar 200kr.</div>
+        <div className="ans">Ja, vill man boka provfrisyr går det bra och är något jag rekomenderar. Den görs hemma hos mig och kostar 200kr som läggs till på slutpriset.</div>
       </details>
 
       <details className="faq">
         <summary className="que">Hur långt kan du resa och tar du betalt för den?</summary>
-        <div className="ans">Jag reser upp till 16 mil från Jönköping Central. Det tillkommer en avgift på 25kr/mil. </div>
+        <div className="ans">Jag reser upp till 16 mil från Jönköping Central. Det tillkommer en avgift på 20kr/mil. </div>
       </details>
 
       <details className="faq">
         <summary className="que">Går det boka för fler personer, till exempel tärnor?</summary>
-        <div className="ans">Det går jättebra. För tärnor utöver brud dras 100kr/person av på priset.</div>
+        <div className="ans">Det går jättebra. För tärnor utöver brud dras -100kr/person av på priset.</div>
       </details>
 
       <details className="faq">
@@ -129,7 +129,7 @@ const Home = () => {
 
       <details className="faq">
         <summary className="que">Vad händer om jag behöver avboka?</summary>
-        <div className="ans">Jag ansvarar inte för kostnader eller skador som uppstår till följd av avbokning från min sida på grund av sjukdom eller annan oförutsedd händelse.</div>
+        <div className="ans">Behöver du avboka ska det meddelas till mig och har du gjort en provupsättning betalas den på 200kr. Jag ansvarar inte för kostnader eller skador som uppstår till följd av avbokning från min sida på grund av sjukdom eller annan oförutsedd händelse.</div>
       </details>
 
       </div>
