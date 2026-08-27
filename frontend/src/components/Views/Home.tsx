@@ -55,7 +55,7 @@ const Home = () => {
           <p>Jag erbjuder ett flertal uppsättningar och diskuterar fram det bästa alternativet utifrån dina önskemål.</p>
           <br />
           <p><span className="text-bold">Heluppsättning</span> från 900kr</p>
-          <p><span className="text-bold">Halvuppsättning</span> från 700kr</p>
+          <p><span className="text-bold">Halvuppsättning</span> från 600kr</p>
           <br />
           <button><Link className="link" to="./bookingPage">Boka håruppsättning</Link></button>
         </div>
