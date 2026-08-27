@@ -114,7 +114,7 @@ const Home = () => {
 
       <details className="faq">
         <summary className="que">Går det boka för fler personer, till exempel tärnor?</summary>
-        <div className="ans">Det går jättebra. För tärnor utöver brud dras -100kr/person av på priset.</div>
+        <div className="ans">Det går jättebra. För tärnor utöver brud dras 100kr/person av på priset.</div>
       </details>
 
       <details className="faq">
