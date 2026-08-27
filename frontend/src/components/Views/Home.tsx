@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import homeImage from '../../Assets/homepagen.webp'
-import homeImageAboutMe from '../../Assets/aboutMeHome.webp'
+import homeImageAboutMe from '../../Assets/AboutMeHome.webp'
 import homeImageSaxar from '../../Assets/sax.webp'
 import homeImageUpdo from '../../Assets/1.webp'
 import homeImageBraiding from '../../Assets/braiding.webp'
