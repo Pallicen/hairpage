@@ -53,7 +53,7 @@ a {
 
 @media (max-width: 768px) {
   .HomePage-startDiv {
-    height: 46rem;
+    height: 48rem;
   }
 }
 
@@ -354,6 +354,7 @@ a {
 }
 
 .Questions-Header {
+  height: 5.4rem;
   font-size: 1.6rem;
   min-width: 50%;
   font-family: "Comic Neue", cursive;
@@ -367,7 +368,7 @@ a {
 }
 
 .Questions-List {
-  height: 28rem;
+  height: 30rem;
   width: 50%;
   display: flex;
   flex-direction: column;

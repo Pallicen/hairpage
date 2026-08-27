@@ -102,6 +102,20 @@
 }
 
 @media (max-width: 768px) {
+
+  .AboutMe-Img, .AboutMe-Img2 {
+
+  img {
+    display: flex;
+    border-radius: 1.25rem;
+    height: 38rem;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: 45% 55%;
+  }
+}
+
   .AboutMePage {
     display: grid;
     grid-template-columns: 1fr;
